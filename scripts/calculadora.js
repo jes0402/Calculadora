@@ -11,32 +11,32 @@ jQuery(document).ready(function() {
             return;
         }
         if(segundo_numero == ""){
-            error_resultado.html("Debes ingresar el primer número<br>")
+            error_resultado.html("Debes ingresar el segundo número<br>")
             return;
         }
         var info_resultado = jQuery("#resultados");
         if(operador == "suma") {
             var resultado = parseInt(primer_numero) + parseInt(segundo_numero);
-            info_resultado.innerHTML = resultado;
+            info_resultado.html(resultado);
             console.log(resultado);
         }
         if(operador == "resta") {
             var resultado = parseInt(primer_numero) - parseInt(segundo_numero);
-            info_resultado.innerHTML = resultado;
+            info_resultado.html(resultado);
             console.log(resultado);
         }
         if(operador == "multiplicacion") {
             var resultado = parseInt(primer_numero) * parseInt(segundo_numero);
-            info_resultado.innerHTML = resultado;
+            info_resultado.html(resultado);
             console.log(resultado);
         }
         if(operador == "division") {
             if(segundo_numero == 0){
-                error_resultado.innerHTML = "El segundo número no puede ser 0";
+                error_resultado.html("El segundo número no puede ser 0");
                 return;
             }
             var resultado = parseInt(primer_numero) / parseInt(segundo_numero);
-            info_resultado.innerHTML = resultado;
+            info_resultado.html(resultado);
             console.log(resultado);
 
         }
